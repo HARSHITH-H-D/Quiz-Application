@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WebDevActivity">
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- CardView for Question 1 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/card_margin"
+                android:layout_marginTop="@dimen/card_margin"
+                android:layout_marginRight="@dimen/card_margin"
+                app:cardBackgroundColor="@color/color_card_4"
+                app:cardCornerRadius="@dimen/card_corner"
+                app:cardElevation="@dimen/card_elevation"
+                app:contentPadding="@dimen/card_content_padding"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/question1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="6dp"
+                        android:lines="2"
+                        android:text="@string/webdev_q1"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/text_size_1"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toTopOf="@+id/radiogroup1"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <RadioGroup
+                        android:id="@+id/radiogroup1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_1"
+                        android:orientation="vertical"
+                        app:layout_constraintTop_toBottomOf="@id/question1"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent">
+
+                        <RadioButton
+                            android:id="@+id/question1_choice1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/webdev_q1_o1"
+                            android:textSize="@dimen/text_size_2" />
+
+                        <RadioButton
+                            android:id="@+id/question1_choice2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/webdev_q1_o2"
+                            android:textSize="@dimen/text_size_2" />
+
+                        <RadioButton
+                            android:id="@+id/question1_choice3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/webdev_q1_o3"
+                            android:textSize="@dimen/text_size_2" />
+
+                        <RadioButton
+                            android:id="@+id/question1_choice4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/webdev_q1_o4"
+                            android:textSize="@dimen/text_size_2" />
+                    </RadioGroup>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- CardView for Question 2 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/card_margin"
+                android:layout_marginTop="@dimen/card_margin"
+                android:layout_marginRight="@dimen/card_margin"
+                app:cardBackgroundColor="@color/card_color_2"
+                app:cardCornerRadius="@dimen/card_corner"
+                app:cardElevation="@dimen/card_elevation"
+                app:contentPadding="@dimen/card_content_padding"
+                app:layout_constraintTop_toBottomOf="@id/card_view1">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/question2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lines="2"
+                        android:text="@string/webdev_q2"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/text_size_1"
+                        android:textStyle="bold"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent" />
+
+                    <RadioGroup
+                        android:id="@+id/radiogroup2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_1"
+                        android:orientation="vertical"
+                        app:layout_constraintTop_toBottomOf="@id/question2"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent">
+
+                        <RadioButton
+                            android:id="@+id/question2_choice1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/webdev_q2_o1"
+                            android:textSize="@dimen/text_size_2" />
+
+                        <RadioButton
+                            android:id="@+id/question2_choice2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/webdev_q2_o2"
+                            android:textSize="@dimen/text_size_2" />
+
+                        <RadioButton
+                            android:id="@+id/question2_choice3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/webdev_q2_o3"
+                            android:textSize="@dimen/text_size_2" />
+
+                        <RadioButton
+                            android:id="@+id/question2_choice4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/webdev_q2_o4"
+                            android:textSize="@dimen/text_size_2" />
+                    </RadioGroup>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Continue similarly for other questions (3 to 5) -->
+
+            <!-- CardView for Question 3 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/card_margin"
+                android:layout_marginTop="@dimen/card_margin"
+                android:layout_marginRight="@dimen/card_margin"
+                app:cardBackgroundColor="@color/card_color_2"
+                app:cardCornerRadius="@dimen/card_corner"
+                app:cardElevation="@dimen/card_elevation"
+                app:contentPadding="@dimen/card_content_padding"
+                app:layout_constraintTop_toBottomOf="@id/card_view2">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/question3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lines="2"
+                        android:text="@string/webdev_q3"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/text_size_1"
+                        android:textStyle="bold"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent" />
+
+                    <RadioGroup
+                        android:id="@+id/radiogroup3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_1"
+                        android:orientation="vertical"
+                        app:layout_constraintTop_toBottomOf="@id/question3"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent">
+
+                        <RadioButton
+                            android:id="@+id/question3_choice1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/webdev_q3_o1"
+                            android:textSize="@dimen/text_size_2" />
+
+                        <RadioButton
+                            android:id="@+id/question3_choice2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/webdev_q3_o2"
+                            android:textSize="@dimen/text_size_2" />
+
+                        <RadioButton
+                            android:id="@+id/question3_choice3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/webdev_q3_o3"
+                            android:textSize="@dimen/text_size_2" />
+
+                        <RadioButton
+                            android:id="@+id/question3_choice4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/webdev_q3_o4"
+                            android:textSize="@dimen/text_size_2" />
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/fab1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_loop"
+                            android:contentDescription="Reset"/>
+
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/fab"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_add"
+                            android:contentDescription="Score"/>
+                    </RadioGroup>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <!-- Similar layout for question 3 -->
+            </androidx.cardview.widget.CardView>
+
+            <!-- CardView for Question 4 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/card_margin"
+                android:layout_marginTop="@dimen/card_margin"
+                android:layout_marginRight="@dimen/card_margin"
+                app:cardBackgroundColor="@color/card_color_1"
+                app:cardCornerRadius="@dimen/card_corner"
+                app:cardElevation="@dimen/card_elevation"
+                app:contentPadding="@dimen/card_content_padding"
+                app:layout_constraintTop_toBottomOf="@id/card_view3">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/question4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lines="2"
+                        android:text="@string/webdev_q4"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_1"
+                        android:textStyle="bold"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent" />
+
+                    <RadioGroup
+                        android:id="@+id/radiogroup4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_1"
+                        android:orientation="vertical"
+                        app:layout_constraintTop_toBottomOf="@id/question4"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent">
+
+                        <RadioButton
+                            android:id="@+id/question4_choice1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/webdev_q4_o1"
+                            android:textSize="@dimen/text_size_2" />
+
+                        <RadioButton
+                            android:id="@+id/question4_choice2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/webdev_q4_o2"
+                            android:textSize="@dimen/text_size_2" />
+
+                        <RadioButton
+                            android:id="@+id/question4_choice3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/webdev_q1_o3"
+                            android:textSize="@dimen/text_size_2" />
+
+                        <RadioButton
+                            android:id="@+id/question4_choice4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/webdev_q4_o4"
+                            android:textSize="@dimen/text_size_2" />
+                    </RadioGroup>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <!-- Similar layout for question 4 -->
+            </androidx.cardview.widget.CardView>
+
+            <!-- CardView for Question 5 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/card_margin"
+                android:layout_marginTop="@dimen/card_margin"
+                android:layout_marginRight="@dimen/card_margin"
+                app:cardBackgroundColor="@color/card_color_2"
+                app:cardCornerRadius="@dimen/card_corner"
+                app:cardElevation="@dimen/card_elevation"
+                app:contentPadding="@dimen/card_content_padding"
+                app:layout_constraintTop_toBottomOf="@id/card_view4">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/question5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lines="2"
+                        android:text="@string/webdev_q5"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_1"
+                        android:textStyle="bold"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent" />
+
+                    <RadioGroup
+                        android:id="@+id/radiogroup5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_1"
+                        android:orientation="vertical"
+                        app:layout_constraintTop_toBottomOf="@id/question5"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent">
+
+                        <RadioButton
+                            android:id="@+id/question5_choice1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/webdev_q5_o1"
+                            android:textSize="@dimen/text_size_2" />
+
+                        <RadioButton
+                            android:id="@+id/question5_choice2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/webdev_q5_o2"
+                            android:textSize="@dimen/text_size_2" />
+
+                        <RadioButton
+                            android:id="@+id/question5_choice3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/webdev_q5_o3"
+                            android:textSize="@dimen/text_size_2" />
+
+                        <RadioButton
+                            android:id="@+id/question5_choice4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/webdev_q5_o4"
+                            android:textSize="@dimen/text_size_2" />
+                    </RadioGroup>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
